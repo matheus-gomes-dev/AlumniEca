@@ -1,0 +1,153 @@
+<html>
+
+
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link rel="stylesheet" href="app/css/main.css"/>
+    <link rel="stylesheet" href="app/css/bootstrap.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="app/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+
+
+
+  <body>
+
+    <!--Degradê-->
+      <div class="row">
+          <div id="topContainer"></div>
+      </div>
+    <!-- -->
+
+    <div class="container-fluid" ng-app="AlumniApp" ng-controller="AlumniController">
+
+
+
+      <header>
+
+        <!-- large and medium devices -->
+          <div class="row visible-md visible-lg">
+            <div class="col-md-6 col-lg-6 text-center">
+              <img id="alumni_logo" src="https://s15.postimg.org/qjjxzlarf/alumni_eca.png" width=400 height=200>
+            </div>
+            <div class="col-md-6 col-lg-6 text-center">
+              <br>
+              <img id="unicamp_logo" src="http://www.unicamp.br/unicamp/sites/default/files/logotipo/uec.svg" width=150 height=164>
+            </div>
+          </div>
+          <br>
+        <!-- -->
+
+        <!-- Small devices-->
+          <div class="row visible-sm">
+            <div class="col-sm-6 text-center">
+              <img id="alumni_logo" src="https://s15.postimg.org/qjjxzlarf/alumni_eca.png" width=200 height=100>
+            </div>
+            <div class="col-sm-6 text-center">
+              <img id="unicamp_logo" src="http://www.unicamp.br/unicamp/sites/default/files/logotipo/uec.svg" width=75 height=82>
+            </div>
+          </div>
+          </div>
+        <!-- -->
+
+        <!-- Extra-small devices-->
+          <div class="row visible-xs">
+            <div class="col-sm-12 text-center">
+              <img id="alumni_logo" src="https://s15.postimg.org/qjjxzlarf/alumni_eca.png" width=200 height=100>
+            </div>
+          </div>
+        <!-- -->
+
+        <!--navBar-->
+          <div class="row" id="mainNav">
+            <ul class="nav nav-pills nav-justified text-center">
+              <li class="abas" id="quemSomos" ng-click="QuemSomos()">Quem somos</li>
+              <li class="abas" id="noticias" ng-click="Noticias()">Notícias</li>
+              <li class="abas" id="fotos" ng-click="Fotos()">Fotos</li>
+              <li class="abas" id="eventos" ng-click="Eventos()">Eventos</li>
+              <li class="abas" id="bancoDeOportunidades" ng-click="Oportunidades()">Oportunidades</li>
+              <li class="abas" id="cadastreSe" ng-click="CadastreSe()">Cadastre-se</li>
+              <li class="abas" id="doacoes" ng-click="Doacoes()">Doações</li>
+            </ul>
+          </div>
+        <!---->
+      </header>
+      
+
+      <!--content organization: small, medium and large devices-->
+        <div class="row text-left visible-sm visible-md visible-lg col-xs-offset-1">
+          <br><br>
+          <h1 class="headerDescription"> Quem Somos</h1>
+          <br>
+          <p class="quemSomosText" id="QuemSomosTextID">A Alumni ECA teve seu início em 2015 pela iniciativa de um grupo de ex-alunos que buscavam reaproximar faculdade, alunos e ex-alunos a fim de gerar oportunidades, trocar experiências e contribuir para a melhoria constante do curso de Engenharia de Controle e Automação da Unicamp!</p>
+          <p class="QuemSomosText">Buscamos, através da rede de ex-alunos:</p>
+          
+          
+          <ol style="list-style-type:disc" id="QuemSomosList">
+            <li>Colaborar com o ensino por meio do compartilhamento de conhecimentos nas diferentes carreiras</li>
+            <br>
+            <li>Gerar oportunidades profissionais para alunos e ex-alunos</li>
+            <br>
+            <li>Participar de eventos de integração realizados pelas atividades extra-curriculares</li>
+            <br>
+            <li>Destinar fundos e doações ao curso e aos alunos por meio de bolsas, prezando pela transparência em relação aos recursos cedidos</li>
+            <br>
+          </ol>
+        </div>
+      <!---->
+
+      <!--content organization: extra-small devices-->
+        <div class="row text-center visible-xs">
+          <br><br>
+          <h1 class="headerDescription"> Quem Somos</h1>
+          <br>
+          <p class="QuemSomosText" id="QuemSomosTextID">A Alumni ECA teve seu início em 2015 pela iniciativa de um grupo de ex-alunos que buscavam reaproximar faculdade, alunos e ex-alunos a fim de gerar oportunidades, trocar experiências e contribuir para a melhoria constante do curso de Engenharia de Controle e Automação da Unicamp!</p>
+          <p class="QuemSomosText">Buscamos, através da rede de ex-alunos:</p>
+          
+          
+          <ol style="list-style-type:disc" id="QuemSomosList">
+            <li>Colaborar com o ensino por meio do compartilhamento de conhecimentos nas diferentes carreiras</li>
+            <br>
+            <li>Gerar oportunidades profissionais para alunos e ex-alunos</li>
+            <br>
+            <li>Participar de eventos de integração realizados pelas atividades extra-curriculares</li>
+            <br>
+            <li>Destinar fundos e doações ao curso e aos alunos por meio de bolsas, prezando pela transparência em relação aos recursos cedidos</li>
+            <br>
+          </ol>
+        </div>
+      <!---->
+
+      <!--footer-->
+        <footer class="text-center">
+          <div class="footer-above">
+            <div class="row">
+              <div class="container-fluid" id="footer">
+                <div class="footer-col col-xs-12 col-md-6">
+                  <br>
+                  <b><p>Faculdade de Engenharia Mecânica da Unicamp</p>
+                  <p>R. Mendeleyev, Cidade Universitária "Zeferino Vaz", 200 - CEP 13083-860</p>
+                  <p>Campinas - SP - Brasil </p></b>
+                </div>
+
+                <div class="footer-col col-xs-12 col-md-6">
+                  <br>
+                  <p id="midiasTitle"><b>MÍDIAS SOCIAIS</b></p>
+                  <a target="_blank" href="https://www.facebook.com/groups/955707394525649/"><img id="fbLogo" width=50 height=50 src="http://icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png"></a>
+                  <a target="_blank" href="https://www.linkedin.com/groups/8447847"><img id="linkedInLogo" width=50 height=50 src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300"></a>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <!-- -->
+
+    </div>
+
+
+  </body>
+
+</html>
